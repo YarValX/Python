@@ -2,12 +2,12 @@
 # Он задумывает два натуральных числа X и Y (X,Y≤1000), а Катя должна их отгадать. Для этого Петя делает две подсказки. 
 # Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
 
-x = int(input("Введите сумму искомых чисел: "))
-y = int(input("Введите произведение искомых чисел: "))
-for i in range(x):
-    for j in range(y):
-        if x == i + j and y == i * j:
-            print(i, j)
+# x = int(input("Введите сумму искомых чисел: "))
+# y = int(input("Введите произведение искомых чисел: "))
+# for i in range(x):
+#     for j in range(y):
+#         if x == i + j and y == i * j:
+#             print(i, j)
 
 # x = abs(int(input('Введите первое натуральное число X ')))
 # y = abs(int(input('Введите второе натуральное число Y ')))
@@ -16,3 +16,14 @@ for i in range(x):
 # y1 = int((S + ((-S) ** 2 - 4 * P) ** 0.5) / 2)
 # x1 = int((S - ((-S) ** 2 - 4 * P) ** 0.5) / 2)
 # print(x1, y1)
+
+x = int(input())
+y = int(input())
+S = x + y
+print(S)
+P = x * y
+print(P)
+for x in range(S):
+    for y in range(P):
+        if S == x + y and P == x * y:
+            print(x,y)
